@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600&family=Noto+Serif+Khmer:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    font-family: 'Noto Serif Khmer', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: wheat;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background: red;
+}
+
+.heading p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.container {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image:hover img {
+    transform: scale(1, 1.2);
+}
+
+.about-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.heading {
+    padding: 0 20px;
+}
+
+.heading h1 {
+    font-size: 36px;
+}
+
+.heading p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+.about {
+    padding: 20px;
+    flex-direction: column;
+}
+
+.about-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    padding: 0;
+    font-size: 16px;
+}
